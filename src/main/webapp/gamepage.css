@@ -1,0 +1,181 @@
+@charset "ISO-8859-1";
+/*.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#number-input {
+  width: 350px;
+  height: 60px;
+  text-align: center;
+  margin: 1.5%;
+}
+
+p, h1, h4, .btn {
+  margin: 10px;
+}
+
+h1 {
+  margin: 50px;
+}
+
+.background {
+  background-color: ;
+}
+
+p {
+	font-size: 16px;
+  padding-top: 10px;
+}
+
+img {
+  width: 400px;
+  height: 350px;
+  margin-top: 50px;
+}
+*/
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+/* Apply global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #E6E6FA;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 2rem;
+  color: #660033;
+}
+
+/* Style scoreboard */
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.scoreboard > div {
+  font-size: 2rem;
+  margin: 0 1rem;
+  padding: 0.5rem;
+  border: 2px solid #660033;
+  border-radius: 10px;
+  color: #660033;
+}
+
+/* Style choices */
+.choices {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.choice {
+  border: 2px solid #660033;
+  border-radius: 10px;
+  margin: 0 2rem;
+  padding: 2rem;
+  background-color: #FFFFFF;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice:hover {
+  transform: scale(1.1);
+}
+
+.choice:active {
+  transform: scale(0.9);
+}
+
+.choice i {
+  color: #660033;
+  font-size: 50px;
+}
+
+/* Style result */
+.result {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: #660033;
+}
+
+#computer-choice {
+  text-align: center;
+  font-size: 2rem;
+  color: #660033;
+}
+
+/* Style timer */
+.timer {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: #660033;
+}
+
+/* Style play again button */
+.play-again {
+  display: block;
+  margin: 3rem auto 1rem auto;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #660033;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.play-again:hover {
+  background-color: #993366;
+}
+
+.logo {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	display: block;
+	z-index: 100;
+	transition: all 250ms linear;
+}
+
+.logo img {
+	height: 30px;
+	width: auto;
+	display: block;
+}
+
+.play-again:active {
+  transform: scale(0.9);
+}
+
+/* Add responsive design */
+@media only screen and (max-width: 600px) {
+  .choices {
+    flex-wrap: wrap;
+  }
+
+  .choice {
+    margin: 2rem 1rem;
+  }
+
+  .timer {
+    margin-top: 1rem;
+  }
+}
